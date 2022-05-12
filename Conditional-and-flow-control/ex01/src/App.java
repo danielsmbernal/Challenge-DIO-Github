@@ -37,14 +37,18 @@ public class App {
             System.out.println("OCTOBER");
         } else if( month == 11){
             System.out.println("NOVEMBER");
-        } else {
+        } else if (month == 12) {
             System.out.println("DECEMBER");
+        } else {
+            System.out.println("UNDEFINED");
         }
     }
     
     private static void defineVacation(int month) {
         if (month == 1 || month == 7 || month == 12 ) {
             System.out.println("VACATION!!!");
+        } else {
+            System.out.println("NO VACATION!!!");
         }  
     }
 }

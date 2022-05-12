@@ -19,8 +19,8 @@ public class App {
     public static void numDayWeek(String dayOfTheWeek) {
         switch (dayOfTheWeek) {
             case "sunday": 
-            System.out.println("1");
-            break;
+                System.out.println("1");
+                break;
             case "monday": 
                 System.out.println("2");
                 break;
@@ -39,17 +39,16 @@ public class App {
             case "saturday": 
                 System.out.println("7");
                 break;
+            default:
+                System.out.println("UNDEFINED");
+                break;
         }
     }        
 
     public static void definedVariable(int a) {
         switch (a) {
             case 1:
-                System.out.println("RIGHT!");
-                break;
             case 2:
-                System.out.println("RIGHT!");
-                break;
             case 3:
                 System.out.println("RIGHT!");
                 break;
