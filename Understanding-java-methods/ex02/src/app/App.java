@@ -1,3 +1,4 @@
+package app;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -12,20 +13,20 @@ public class App {
         System.out.println("SQUARE:");
         System.out.print("Enter the side of the square: ");
         double side = input.nextDouble();
-        Quadrilaterals.areaSquare(side);
+        Quadrilaterals.area(side);
 
         System.out.println("\nRECTANGLE:");
         System.out.print("Enter the base and the height of the rectangle: ");
         double base = input.nextDouble();
         double height = input.nextDouble();
-        Quadrilaterals.areaRectangle(base, height);
+        Quadrilaterals.area(base, height);
 
         System.out.println("\nTRAPEZIUM:");
         System.out.print("Enter the two bases and the height of the trapezium: ");
-        double base1 = input.nextDouble();
-        double base2 = input.nextDouble();
-        height = input.nextDouble();
-        Quadrilaterals.areaTrapezium(base1, base2, height);
+        float base1 = input.nextFloat();
+        float base2 = input.nextFloat();
+        float height1 = input.nextFloat();
+        Quadrilaterals.area(base1, base2, height1);
 
         input.close();
     }
