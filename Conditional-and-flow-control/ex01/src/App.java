@@ -10,6 +10,11 @@ public class App {
         cal.setTime(currentDate);
         int month = 1 + cal.get(Calendar.MONTH);
 
+        defineMonth(month);
+        defineVacation(month);
+    }
+    
+    public static void defineMonth (int month) {
         if (month == 1) {
             System.out.println("JANUARY");
         } else if( month == 2){
@@ -35,9 +40,11 @@ public class App {
         } else {
             System.out.println("DECEMBER");
         }
-
+    }
+    
+    private static void defineVacation(int month) {
         if (month == 1 || month == 7 || month == 12 ) {
             System.out.println("VACATION!!!");
-        }   
+        }  
     }
 }
