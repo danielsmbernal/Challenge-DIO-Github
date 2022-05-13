@@ -2,22 +2,23 @@ import java.util.Scanner;
 
 public class App {
     
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         
         Scanner input = new Scanner(System.in);
         
-        int count = 0;
-        int number = 0;
-        int bigNumber = 0; 
+        int count = 0, number = 0, bigNumber = 0; 
         double sum = 0;
 
         while (count < 5) {
         System.out.print("Enter a number: ");
         number = input.nextInt();
+
         sum += number;
+
         if (number > bigNumber) {
             bigNumber = number;
         }
+        
         count++;
         }
 
