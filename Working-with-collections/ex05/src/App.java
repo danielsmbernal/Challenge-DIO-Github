@@ -38,7 +38,7 @@ public class App {
         System.out.println("\nOrder by name, year of creation or IDE");
         Set <FavoriteLanguages> languagesByNameYearOfCreationIde = new TreeSet<>(new CompareByNameYearIde());
         languagesByNameYearOfCreationIde.addAll(languagesByOrder);
-        System.out.println(languagesByYearOfCreationName.toString().replace("[", " ").replace("]", " "));
+        System.out.println(languagesByNameYearOfCreationIde.toString().replace("[", " ").replace("]", " "));
  
     }
 }
